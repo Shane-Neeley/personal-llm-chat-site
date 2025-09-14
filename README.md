@@ -14,6 +14,8 @@ A modern personal website template with AI chat functionality that runs entirely
 
 ## Quick Start
 
+Live demo (after Actions runs): `https://shane-neeley.github.io/personal-llm-chat-site/`
+
 ### 1. Clone & Setup
 
 ```bash
