@@ -65,51 +65,21 @@ npm start
 
 ### 5. Deploy
 
-#### Firebase Hosting (Recommended)
+#### GitHub Pages (Recommended)
+
+- Already configured via `.github/workflows/pages.yml`.
+- Push to `main` and GitHub Actions will build `dist/` and deploy automatically.
+- Your site will be available at `https://<your-username>.github.io/personal-llm-chat-site/`.
+- Verify: Repository → Settings → Pages → Build and deployment = GitHub Actions.
+- Custom domain (optional): Settings → Pages → Custom domain (adds `CNAME`).
+
+#### Firebase Hosting (Alternative)
 
 ```bash
-# Install Firebase CLI
 npm install -g firebase-tools
-
-# Login and deploy
 firebase login
+npm run build
 firebase deploy --only hosting
-```
-
-Build and deploy in one command:
-
-```bash
-npm run build && firebase deploy --only hosting
-```
-
-#### GitHub Pages
-
-1. Push your code to GitHub
-2. Go to repository Settings > Pages
-3. Set source to "GitHub Actions"
-4. Create `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '24'
-      - run: npm install
-      - run: npm run build
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
 ```
 
 #### Other Options
