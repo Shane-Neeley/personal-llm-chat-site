@@ -1,0 +1,79 @@
+{
+  "books": [
+    {
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas and Andrew Hunt",
+      "highlights": [
+        {
+          "text": "Care about your craft. Why spend your life developing software unless you care about doing it well?"
+        },
+        {
+          "text": "Think! About your work. Turn off the autopilot and take control. Constantly critique and appraise your work."
+        },
+        {
+          "text": "Don't live with broken windows. Fix bad designs, wrong decisions, and poor code when you see them."
+        }
+      ]
+    },
+    {
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "highlights": [
+        {
+          "text": "Clean code is not written by following a set of rules. You don't become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines."
+        },
+        {
+          "text": "The only way to make the deadline—the only way to go fast—is to keep the code as clean as possible at all times."
+        },
+        {
+          "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+        }
+      ]
+    },
+    {
+      "title": "Don't Make Me Think",
+      "author": "Steve Krug",
+      "highlights": [
+        {
+          "text": "Don't make me think! A person of average ability and experience can figure out how to use the thing to accomplish something without it being more trouble than it's worth."
+        },
+        {
+          "text": "The fact that the people who built the site didn't care enough to make things obvious—and easy—can erode confidence in the people behind the site."
+        },
+        {
+          "text": "If you can't make a page self-evident, you at least need to make it self-explanatory."
+        }
+      ]
+    },
+    {
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "highlights": [
+        {
+          "text": "The most effective way to change your habits is to focus not on what you want to achieve, but on who you wish to become."
+        },
+        {
+          "text": "Every action you take is a vote for the type of person you wish to become. No single instance will transform your beliefs, but as the votes build up, so does the evidence of your new identity."
+        },
+        {
+          "text": "The secret to getting results that last is to never stop making improvements. It's remarkable what you can build if you just don't stop."
+        }
+      ]
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "highlights": [
+        {
+          "text": "The confidence that individuals have in their beliefs depends mostly on the quality of the story they can tell about what they see, even if they see little."
+        },
+        {
+          "text": "A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth."
+        },
+        {
+          "text": "The idea that the future is unpredictable is undermined every day by the ease with which the past is explained."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Fred McDeveloper",
+  "currentRole": "Senior Full-Stack Engineer at TechCorp Inc (2023 - Present)",
+  "experience": "8 Years Experience",
+  "summary": "Full-Stack Development, AI Integration, Team Leadership",
+  "contact": "hello@taylor-dev.example • linkedin.com/in/taylor-dev",
+  "technicalSkills": [
+    "JavaScript", "TypeScript", "Python", "React", "Node.js", "AWS", "Docker",
+    "PostgreSQL", "MongoDB", "GraphQL", "REST APIs", "Git", "CI/CD",
+    "Machine Learning", "OpenAI API", "WebRTC", "Microservices", "Kubernetes",
+    "TensorFlow", "FastAPI", "Next.js", "Tailwind CSS", "Redis"
+  ],
+  "workHistory": [
+    {
+      "company": "TechCorp Inc.",
+      "role": "Senior Full-Stack Engineer",
+      "period": "2023 - Present",
+      "description": "Leading development of AI-powered web applications using React, Node.js, and OpenAI API. Building scalable microservices architecture."
+    },
+    {
+      "company": "StartupXYZ",
+      "role": "Full-Stack Developer",
+      "period": "2020 - 2023",
+      "description": "Built the entire platform from scratch using modern JavaScript stack. Implemented real-time features with WebRTC and WebSockets."
+    },
+    {
+      "company": "Digital Agency Pro",
+      "role": "Frontend Developer",
+      "period": "2018 - 2020",
+      "description": "Created responsive web applications for clients using React and Vue.js. Collaborated with designers to implement pixel-perfect UIs."
+    },
+    {
+      "company": "Code Bootcamp",
+      "role": "Junior Developer",
+      "period": "2017 - 2018",
+      "description": "Started career building simple web apps with HTML, CSS, and vanilla JavaScript. Learned fundamentals of software development."
+    }
+  ],
+  "education": [
+    "Bachelor of Science - State University, Computer Science (2017)",
+    "Full-Stack Web Development Bootcamp - Code Academy (2016)"
+  ],
+  "publications": [
+    "Technical blog with 50+ articles on modern web development",
+    "Open source contributor to several popular JavaScript libraries",
+    "Speaker at 3 local tech meetups on AI integration in web apps"
+  ],
+  "background": "Started as a self-taught programmer, transitioned from marketing to software development through intensive learning and bootcamp experience"
+}

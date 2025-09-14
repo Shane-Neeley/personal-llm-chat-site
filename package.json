@@ -1,0 +1,17 @@
+{
+  "name": "personal-llm-chat-site",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "npx --yes live-server --port=8000 --watch=index.html,assets,public --no-css-inject --quiet",
+    "test": "node test/basic.test.js",
+    "build": "node scripts/build.js",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "devDependencies": {
+    "firebase-tools": "^13.1.0"
+  }
+}

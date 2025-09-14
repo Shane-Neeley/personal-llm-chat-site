@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal LLM Chat Site</title>
+
+  <!-- Nice defaults without a framework (optional; remove if you want) -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul><li><strong id="site-name">Your Name</strong></li></ul>
+      <ul>
+        <li><a id="resume-link" href="/public/files/resume.sample.pdf" target="_blank">Résumé</a></li>
+        <li><a id="github-link" href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        <li><a id="easter-egg-link" href="/gorilla-schedule.html" class="gorilla-egg" title="Easter Egg Feature" aria-label="Easter Egg Feature" style="display: none;">🦍</a></li>
+        <!-- <li><a href="/about.html">About</a></li> -->
+        <!-- <li><a href="#chat">Chat</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 id="main-heading">Hi, I'm [Your Name]</h1>
+    <p id="main-description">Welcome to my personal site with AI chat powered by local models.
+    <br><br>This site loads AI models directly in your browser for privacy and speed.
+    <br><br>
+    Ask the AI below anything about me!</p>
+    <!-- <h2 id="chat">Local Chat (runs in your browser with transformers.js 🤗)</h2> -->
+    <ai-chat></ai-chat>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="year"></span> <span id="site-domain">YourSite.com</span></small>
+  </footer>
+
+  <script type="module">
+    // Load site configuration and populate dynamic content
+    import { SITE_CONFIG } from '/assets/site-config.js';
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Populate dynamic content from config
+    document.getElementById('site-name').textContent = SITE_CONFIG.name;
+    document.getElementById('main-heading').textContent = `Hi, I'm ${SITE_CONFIG.name}`;
+    document.getElementById('site-domain').textContent = SITE_CONFIG.name.replace(' ', '') + '.com';
+
+    // Update links
+    if (SITE_CONFIG.resumePdfPath) {
+      document.getElementById('resume-link').href = SITE_CONFIG.resumePdfPath;
+    } else {
+      document.getElementById('resume-link').style.display = 'none';
+    }
+
+    // Show/hide Easter Egg
+    if (SITE_CONFIG.enableEasterEgg) {
+      const easterEggLink = document.getElementById('easter-egg-link');
+      easterEggLink.style.display = 'block';
+      easterEggLink.href = SITE_CONFIG.easterEggPath;
+      easterEggLink.title = SITE_CONFIG.easterEggTitle;
+    }
+
+    // Load the chat component
+    import '/assets/chat.js';
+  </script>
+</body>
+</html>

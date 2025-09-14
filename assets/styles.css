@@ -1,0 +1,13 @@
+:root {
+  --brand: oklch(65% 0.11 260);
+}
+h1, h2 { letter-spacing: 0.01em; }
+ai-chat { display: block; margin-block: 1rem 2rem; }
+
+/* Shadow DOM is scoped, but we can theme via CSS vars */
+ai-chat {
+}
+
+/* Subtle easter egg link */
+.gorilla-egg { opacity: 0.55; filter: grayscale(1) saturate(0.4); transition: filter .2s ease, opacity .2s ease; }
+.gorilla-egg:hover, .gorilla-egg:focus { opacity: 0.9; filter: none; }
