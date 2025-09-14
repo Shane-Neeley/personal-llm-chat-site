@@ -105,6 +105,18 @@ Any static hosting service works:
 - Vercel: Connect your GitHub repo
 - Surge.sh: `surge dist`
 
+### Debugging GitHub Pages (quick)
+
+- Verify Actions run: Actions → "Deploy to GitHub Pages" → check logs
+- Ensure Pages is enabled: Settings → Pages → Build and deployment = GitHub Actions
+- Paths: use relative asset links (no leading `/`), e.g., `assets/...`, `public/...`
+- Artifact: confirm `dist/` is uploaded and includes `index.html`
+- Re-deploy: `gh workflow run "Deploy to GitHub Pages"` or push to `main`
+- API check/enable: `gh api repos/<owner>/<repo>/pages` (GET) or `gh api -X POST repos/<owner>/<repo>/pages -f build_type=workflow`
+- Wait ~1–2 minutes and hard refresh; CDN/Pages can cache
+
+Workflow file: `.github/workflows/pages.yml`
+
 ## Configuration
 
 ### Main Config File
