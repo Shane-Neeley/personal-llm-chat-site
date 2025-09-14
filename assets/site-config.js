@@ -10,18 +10,18 @@ export const SITE_CONFIG = {
   // File paths (set to null to disable features)
   // Edit these to point at your own files.
   // Resume JSON is provided as assets/resume.json by default.
-  resumeJsonPath: "/assets/resume.json",
+  resumeJsonPath: "assets/resume.json",
   // Generate your own highlights.json with the Kindle Highlights scraper:
   // https://github.com/Shane-Neeley/kindle-highlights
   // Use the same structure as /public/files/highlights.sample.json
-  highlightsPath: "/public/files/highlights.sample.json",
-  manuscriptPath: "/public/files/manuscript.sample.txt",
+  highlightsPath: "public/files/highlights.sample.json",
+  manuscriptPath: "public/files/manuscript.sample.txt",
   // Default sample resume PDF for easy preview
-  resumePdfPath: "/public/files/resume.sample.pdf",
+  resumePdfPath: "public/files/resume.sample.pdf",
 
   // Easter Egg feature toggle
   enableEasterEgg: true,
-  easterEggPath: "/gorilla-schedule.html",
+  easterEggPath: "gorilla-schedule.html",
   easterEggTitle: "Gorilla Schedule (Easter Egg)",
 
   // Book promotion (set to null to disable)

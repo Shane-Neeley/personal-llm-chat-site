@@ -623,7 +623,7 @@ class AIChat extends HTMLElement {
     }
 
     try {
-      const response = await fetch("/assets/chat.css");
+      const response = await fetch("assets/chat.css");
       if (!response.ok) throw new Error("Styles not found");
       const css = await response.text();
       AIChat._cachedCSS = css; // Cache for future instances

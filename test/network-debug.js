@@ -98,7 +98,7 @@ class NetworkDebugger {
     console.log('🔍 Testing resource availability...');
 
     for (const file of filesToCheck) {
-      await this.checkUrl(`http://localhost:8002${file.path}`, file.desc);
+      await this.checkUrl(`http://localhost:8002/${file.path.replace(/^\//, '')}`, file.desc);
     }
   }
 

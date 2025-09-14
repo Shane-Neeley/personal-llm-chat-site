@@ -7,16 +7,16 @@
 
   <!-- Nice defaults without a framework (optional; remove if you want) -->
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="container">
     <nav>
       <ul><li><strong id="site-name">Your Name</strong></li></ul>
       <ul>
-        <li><a id="resume-link" href="/public/files/resume.sample.pdf" target="_blank">Résumé</a></li>
+        <li><a id="resume-link" href="public/files/resume.sample.pdf" target="_blank">Résumé</a></li>
         <li><a id="github-link" href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-        <li><a id="easter-egg-link" href="/gorilla-schedule.html" class="gorilla-egg" title="Easter Egg Feature" aria-label="Easter Egg Feature" style="display: none;">🦍</a></li>
+        <li><a id="easter-egg-link" href="gorilla-schedule.html" class="gorilla-egg" title="Easter Egg Feature" aria-label="Easter Egg Feature" style="display: none;">🦍</a></li>
         <!-- <li><a href="/about.html">About</a></li> -->
         <!-- <li><a href="#chat">Chat</a></li> -->
       </ul>
@@ -39,7 +39,7 @@
 
   <script type="module">
     // Load site configuration and populate dynamic content
-    import { SITE_CONFIG } from '/assets/site-config.js';
+    import { SITE_CONFIG } from './assets/site-config.js';
 
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -64,7 +64,7 @@
     }
 
     // Load the chat component
-    import '/assets/chat.js';
+    import './assets/chat.js';
   </script>
 </body>
 </html>

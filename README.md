@@ -12,6 +12,22 @@ A modern personal website template with AI chat functionality that runs entirely
 - 🎁 **Optional Easter Egg** - Fun hidden features (toggleable)
 - 🚀 **Zero Server Setup** - Deploy anywhere that serves static files
 
+## Why this?
+
+- **A chat-with-me site**: More engaging than a static resume. Add a light personality.
+- **Real context**: Pulls from your résumé, Kindle highlights (for insight into your brain), and a manuscript or writing sample.
+- **Future-proof**: Swap models as they improve; keep the UX stable.
+- **Private by default**: Runs in-browser; content is yours.
+
+Used as the foundation for ShaneNeeley.com. Future plans: lightweight checks for better small models, optional upgrade prompts, and integrations for new local AI tools.
+
+## Credits
+
+- Built with [transformers.js](https://huggingface.co/docs/transformers.js)
+- Styled with [PicoCSS](https://picocss.com/)
+
+---
+
 ## Quick Start
 
 Live demo (after Actions runs): `https://shane-neeley.github.io/personal-llm-chat-site/`
@@ -232,21 +248,5 @@ npm install
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
-
-## Why this?
-
-- **A chat-with-me site**: More engaging than a static resume. Add a light personality.
-- **Real context**: Pulls from your résumé, Kindle highlights, and a manuscript or writing sample.
-- **Future-proof**: Swap models as they improve; keep the UX stable.
-- **Private by default**: Runs in-browser; content is yours.
-
-Used as the foundation for ShaneNeeley.com. Future plans: lightweight checks for better small models, optional upgrade prompts, and integrations for new local AI tools.
-
-## Credits
-
-- Built with [transformers.js](https://huggingface.co/docs/transformers.js)
-- Styled with [PicoCSS](https://picocss.com/)
-
----
 
 🎉 **Fork this template and create your own AI-powered personal site!**
