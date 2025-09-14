@@ -8,7 +8,7 @@ A modern personal website template with AI chat functionality that runs entirely
 - 🔒 **Privacy-First** - All conversations stay in your browser
 - ⚡ **Fast & Lightweight** - Minimal dependencies, quick loading
 - 🎨 **Easily Customizable** - Configuration-driven personalization
-- 📱 **Responsive Design** - Works on all devices (not sure if this is true)
+- 📱 **Responsive Design** - Works on all devices
 - 🎁 **Optional Easter Egg** - Fun hidden features (toggleable)
 - 🚀 **Zero Server Setup** - Deploy anywhere that serves static files
 
@@ -28,21 +28,7 @@ npm install
 
 ### 2. Personalize Your Site
 
-Run the interactive scaffold script:
-
-```bash
-node scripts/scaffold.js
-```
-
-This will prompt you for:
-- Your name and professional role
-- GitHub username
-- Personality trait for the AI
-- Book information (optional)
-- File paths for your content
-- Expertise areas
-
-Or manually edit `assets/site-config.js` to customize:
+Edit `assets/site-config.js` and `assets/resume.json` to customize:
 
 ```javascript
 export const SITE_CONFIG = {
@@ -55,9 +41,9 @@ export const SITE_CONFIG = {
 
 ### 3. Add Your Content
 
-Replace the sample files with your own:
+Replace or keep the sample files (site works out-of-the-box):
 
-- **Resume**: Replace `assets/resume.sample.json` and `public/files/resume.sample.pdf`
+- **Resume**: Edit `assets/resume.json` and optionally replace `public/files/resume.sample.pdf`
 - **Book Highlights**: Replace `public/files/highlights.sample.json`
   - Generate from Kindle using: https://github.com/Shane-Neeley/kindle-highlights
 - **Manuscript**: Replace `public/files/manuscript.sample.txt` with your book/writing
@@ -144,7 +130,7 @@ export const SITE_CONFIG = {
   role: "Your Professional Role",
 
   // File paths (set to null to disable features)
-  resumeJsonPath: "/assets/resume.sample.json",
+  resumeJsonPath: "/assets/resume.json",
   resumePdfPath: "/public/files/resume.sample.pdf",
   highlightsPath: "/public/files/highlights.sample.json",
   manuscriptPath: "/public/files/manuscript.sample.txt",
@@ -226,10 +212,10 @@ Generate highlights from Kindle using: https://github.com/Shane-Neeley/kindle-hi
 │   ├── context.js           # AI context system
 │   ├── chat.js             # Chat component
 │   ├── chat.css            # Chat styles
-│   └── resume.sample.json   # Sample resume data
+│   └── resume.json         # Sample resume data
 ├── public/files/           # Content files (highlights, manuscript, etc.)
 ├── scripts/
-│   └── scaffold.js         # Interactive setup script
+│   └── build.js            # Build script (copies to dist)
 ├── test/                   # Test files
 ├── index.html              # Main page
 ├── about.html              # About page
@@ -241,7 +227,6 @@ Generate highlights from Kindle using: https://github.com/Shane-Neeley/kindle-hi
 - `npm test` - Run tests
 - `npm run build` - Build for production
 - `npm start` - Start development server
-- `node scripts/scaffold.js` - Interactive personalization setup
 
 ### AI Models
 
